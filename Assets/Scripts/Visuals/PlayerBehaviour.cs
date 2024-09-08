@@ -1,0 +1,48 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using rob.HexProject.Logic;
+using UnityEngine;
+using UnityEngine.Assertions;
+
+namespace rob.HexProject.Visuals
+{
+    public class PlayerBehaviour : MonoBehaviour
+    {
+        [SerializeField] private MeshRenderer _meshRenderer;
+    
+        private IPlayer _player;
+
+        public void Initialize(IPlayer player)
+        {
+            Assert.IsNull(_player);
+            Assert.IsNotNull(player);
+        
+            _player = player;
+            _player.PlayerDied += OnPlayerDied;
+        
+            // TODO use shared materials
+            _meshRenderer.material.color = player.Id % 2 == 0 ? Color.red : Color.blue;
+        }
+
+        public void Step()
+        {
+            // TODO: Use the commands to animate the player
+            var commands = _player.Step();
+        }
+
+        private void Update()
+        {
+            if (_player == null) return;
+        
+            var (x, y, z) = _player.Tile.Position.To3D();
+            transform.position = new Vector3(x, y, z);
+        }
+
+        private void OnPlayerDied()
+        {
+            // TODO: animate death
+            Destroy(gameObject);
+        }
+    }
+}
