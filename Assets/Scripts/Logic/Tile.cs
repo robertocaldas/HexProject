@@ -1,7 +1,7 @@
 using System.Linq;
 
 // TODO a lot of public methods/properties in all files could be internal. Also, create different assemblies.
-namespace rob.HexProject.Logic
+namespace johnny.HexProject.Logic
 {
     /// <summary>
     /// Tile holds a position and what is on it.

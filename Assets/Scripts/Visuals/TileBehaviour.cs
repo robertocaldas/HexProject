@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using rob.HexProject.Logic;
+using johnny.HexProject.Logic;
 using UnityEditor;
 using UnityEngine;
 
-namespace rob.HexProject.Visuals
+namespace johnny.HexProject.Visuals
 {
     public class TileBehaviour : MonoBehaviour
     {

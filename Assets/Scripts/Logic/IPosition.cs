@@ -1,4 +1,4 @@
-namespace rob.HexProject.Logic
+namespace johnny.HexProject.Logic
 {
     /// <summary>
     /// Interface for a position in a grid.

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
+using johnny.HexProject.Logic;
+using johnny.HexProject.Visuals;
 using UnityEngine;
-using rob.HexProject.Logic;
-using rob.HexProject.Visuals;
 
-namespace rob.HexProject.Game
+namespace johnny.HexProject.Game
 {
     public class GamePrototype : MonoBehaviour
     {

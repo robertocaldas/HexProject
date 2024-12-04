@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace rob.HexProject.Logic
+namespace johnny.HexProject.Logic
 {
     public interface IPlayer
     {

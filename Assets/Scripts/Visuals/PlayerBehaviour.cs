@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using rob.HexProject.Logic;
+using johnny.HexProject.Logic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace rob.HexProject.Visuals
+namespace johnny.HexProject.Visuals
 {
     public class PlayerBehaviour : MonoBehaviour
     {

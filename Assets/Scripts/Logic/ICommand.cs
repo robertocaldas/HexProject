@@ -1,4 +1,4 @@
-namespace rob.HexProject.Logic
+namespace johnny.HexProject.Logic
 {
     /// <summary>
     /// Each simulation step provides a list of commands that were executed.

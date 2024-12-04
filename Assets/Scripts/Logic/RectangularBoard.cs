@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace rob.HexProject.Logic
+namespace johnny.HexProject.Logic
 {
     public class RectangularBoard : IBoard
     {

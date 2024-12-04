@@ -1,4 +1,4 @@
-namespace rob.HexProject.Logic
+namespace johnny.HexProject.Logic
 {
     /// <summary>
     /// Odd-R Hexagon implementation of IPosition

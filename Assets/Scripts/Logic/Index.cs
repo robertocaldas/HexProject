@@ -1,6 +1,6 @@
 using System;
 
-namespace rob.HexProject.Logic
+namespace johnny.HexProject.Logic
 {
     /// <summary>
     /// Basic struct that represents the identifier for a position in a grid.

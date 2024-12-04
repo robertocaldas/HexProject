@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace rob.HexProject.Logic
+namespace johnny.HexProject.Logic
 {
     // TODO: create abstract class
     public class AIPlayer : IPlayer

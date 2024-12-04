@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Random = UnityEngine.Random;
-namespace rob.HexProject.Logic
+namespace johnny.HexProject.Logic
 {
     /// <summary>
     /// Creates and provides access to players.
