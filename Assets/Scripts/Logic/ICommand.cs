@@ -5,7 +5,6 @@ namespace johnny.HexProject.Logic
     /// </summary>
     public interface ICommand {}
     
-    // TODO: Add things to help with visualization
     public struct MoveCommand : ICommand {}
     
     public struct AttackCommand : ICommand {}

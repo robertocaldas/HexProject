@@ -21,13 +21,11 @@ namespace johnny.HexProject.Visuals
             _player = player;
             _player.PlayerDied += OnPlayerDied;
         
-            // TODO use shared materials
             _meshRenderer.material.color = player.Id % 2 == 0 ? Color.red : Color.blue;
         }
 
         public void Step()
         {
-            // TODO: Use the commands to animate the player
             var commands = _player.Step();
         }
 
@@ -41,7 +39,6 @@ namespace johnny.HexProject.Visuals
 
         private void OnPlayerDied()
         {
-            // TODO: animate death
             Destroy(gameObject);
         }
     }

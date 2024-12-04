@@ -28,13 +28,10 @@ namespace johnny.HexProject.Logic
                     tile = board.GetRandomTile();
                 } while (tile.IsOccupied);
                 
-                /////////////////////////////////////////////////////////
-                // TODO Create a Settings class/scriptable object for this
                 int movementsPerStep = 1;
                 int stepsPerAttack = 2;
                 int attackRange = 3;
                 int health = Random.Range(2, 6);
-                /////////////////////////////////////////////////////////
                 
                 var player = PlayerFactory.CreateAIPlayer(movementsPerStep, 
                     stepsPerAttack, attackRange, health, tile, board);
@@ -45,7 +42,6 @@ namespace johnny.HexProject.Logic
         
         public IPlayer GetOpponent(IPlayer player)
         {
-            // TODO: refactor when having teams and etc
             // odd vs even:
             return Players
                 .Where(p => p.Id % 2 != player.Id % 2)

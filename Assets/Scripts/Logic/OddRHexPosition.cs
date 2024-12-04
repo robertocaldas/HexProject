@@ -35,7 +35,6 @@ namespace johnny.HexProject.Logic
             return (q, r, -q - r);
         }
         
-        // TODO consider occupied positions
         public int GetDistance(IPosition position)
         {
             var (q1, r1, s1) = OddRToCube(Index);

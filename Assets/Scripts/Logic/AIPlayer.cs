@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace johnny.HexProject.Logic
 {
-    // TODO: create abstract class
     public class AIPlayer : IPlayer
     {
         private static int _nextId = 0;
@@ -18,7 +17,6 @@ namespace johnny.HexProject.Logic
         public event Action PlayerDied;
         public bool IsAlive => Health > 0;
 
-         // TODO LINK PLAYER TO TILE AND VICE-VERSA IN ABSTRACT CLASS
         public Tile Tile 
         {
             get => _tile;

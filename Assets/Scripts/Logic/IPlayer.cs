@@ -6,7 +6,6 @@ namespace johnny.HexProject.Logic
     public interface IPlayer
     {
         int Id { get; }
-        // TODO public setter for Tile?
         Tile Tile { get; }
         int Health { get; }
         void TakeDamage(int damage);
